@@ -42,4 +42,14 @@ class Car:
             raise ValueError("Make must be a string and must be at least 3 characters long!")
         
     def honk_horn(self):
+        ipdb.set_trace()
         print(f"BEEP BEEP{'!' * self.horn_volume}")
+
+car1 = Car('Chevy', 'Malibu', 2019)
+print(car1)
+
+car2 = Car('Dodge', 'Charger', 2022)
+print(car2)
+
+car1.honk_horn()
+car2.honk_horn()
